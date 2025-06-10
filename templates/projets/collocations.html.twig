@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block projet %}
+    <section class="project-detail-card">
+        <h1>Application de demande de collocations</h1>
+    </section>
+{% endblock %}
+
+{% block description %}
+    <section class="project-section">
+        <h3>Description</h3>
+        <p>
+            Le Crous met à la disposition des étudiants des logements pour la collocations.
+            Dans le but de facilité les demandes et l'attribution de ces collocations, ma mission était de créer une application qui puisse permettre aux étudiants de faire une demande de collocation en entrant ses informations dans la base.
+            Les agents du Crous eux ont accés à une interface permettant de gérer la base de données en fonction de leurs permissions.
+        </p>
+    </section>
+{% endblock %}
+
+{% block compétences %}
+    <section class="project-section">
+        <h3>Compétences mobilisées</h3>
+        <ul>
+            <li>Symfony</li>
+            <li>Base de Données</li>
+            <li>Gestion de Projet</li>
+        </ul>
+    </section>
+{% endblock %}
+
+{% block individuel %}
+    <section class="project-section">
+        <h3>Travail personnel</h3>
+        <p>
+            Création en entier de l'application, création et gestion de la base de données, création d'une interface admin avec easyadmin
+        </p>
+    </section>
+{% endblock %}
+
+{% block appris %}
+    <section class="project-section">
+        <h3>Ce que j'ai appris</h3>
+        <ul>
+            <li>Structurer un projet Symfony</li>
+            <li>Gérer une base de données</li>
+            <li>Utiliser EasyAdmin</li>
+            <li>Créer des user stories</li>
+            <li>Gestion du temps et des priorités</li>
+        </ul>
+    </section>
+{% endblock %}
+
+{% block entreprise %}
+    <div class="encart-entreprise">
+        <span class="encart-titre">Projet pour :</span>
+        <a href="" class="encart-lien">
+            le Crous de Grenoble
+        </a>
+    </div>
+{% endblock %}
+
+{% block buttons %}
+    <a href="{{ path('app_portfolio') }}" class="btn-retour">
+        &larr; Retour 
+    </a>
+{% endblock %}

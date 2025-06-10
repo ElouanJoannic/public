@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon Portfolio{% endblock %}
+
+{% block body %}
+    <main>
+    <h1>Mon Portfolio</h1>
+    <div class="about-card">
+        <h3>À propos de moi :</h3>
+        <div>
+                Je suis un étudiant de l'IUT2 de Grenoble en parcours Réalisation d'Applications : Conception, Développement, Validation.
+                Après mon bac général obtenu avec mention je suis d'abord entré en Classe Préparatoire aux Grandes Ecoles avant de me rediriger vers mes études actuelles.
+                Ce choix fut notamment motivé par la découverte d'une passion pour moi : le développement de jeux vidéos, une passion dont je voudrais à présent faire mon métier.
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <h3>Les projets sur lesquels j'ai travaillé</h3>
+        <div class="projects-list">
+            <a class="project-card" href="{{ path('app_projet', {id: 1}) }}">
+            <h4>Jeu narratif sur la seconde guerre mondiale</h4>
+            <p>Codé en PHP et HTML</p>
+            </a>
+
+            <a class="project-card" href="{{ path('app_projet', {id: 2}) }}">
+            <h4>Application de suivi de recherche de stage</h4>
+            <p>Android (étudiant) & Symfony (professeur)</p>
+            </a>
+
+            <a class="project-card" href="{{ path('app_projet', {id: 3}) }}">
+            <h4>Générateur de documents pour le CROUS</h4>
+            <p>Création et manipulation de documents à partir d’un CSV</p>
+            </a>
+
+            <a class="project-card" href="{{ path('app_projet', {id: 4}) }}">
+            <h4>Application web de demandes de collocations CROUS</h4>
+            <p>Application web</p>
+            </a>
+        </div>
+    </div>
+    </main>
+{% endblock %}

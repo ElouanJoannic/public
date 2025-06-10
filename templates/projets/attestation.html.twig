@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block projet %}
+    <section class="project-detail-card">
+        <h1>Application de création d'attestations de précarité</h1>
+    </section>
+{% endblock %}
+
+{% block description %}
+    <section class="project-section">
+        <h3>Description</h3>
+        <p>
+            Certains étudiants sont dans des situations de précarité mais n'ont pas accès à certaines aides. Cependant le Crous met à leur disposition des aménagements en leur conférant un statut prouvé par une attestation.
+            Ma mission était donc de créé une application permettant facilement de créer des attestations à partir d'un fichier csv, de voir les détails de celles dans la base et pouvoir les supprimer.
+            L'application permet aussi de créer un nouveau fichier csv regroupant nom et prenom de chaque étudiant bénéficiant d'une attestation. 
+            Ce fichier contient aussi deux lien : l'un renvoie directement sur une page affichant l'attestation, le second vers un Qrcode qui ramene à l'attestation.
+            Le Qrcode est créé à l'import du fichier csv qui construit les attestations.
+        </p>
+    </section>
+{% endblock %}
+
+{% block compétences %}
+    <section class="project-section">
+        <h3>Compétences mobilisées</h3>
+        <ul>
+            <li>Symfony</li>
+            <li>Base de Données</li>
+        </ul>
+    </section>
+{% endblock %}
+
+{% block individuel %}
+    <section class="project-section">
+        <h3>Travail personnel</h3>
+        <p>
+            Création en entier de l'application, authentification par CAS, création et gestion de la base de données
+        </p>
+    </section>
+{% endblock %}
+
+{% block appris %}
+    <section class="project-section">
+        <h3>Ce que j'ai appris</h3>
+        <ul>
+            <li>Structurer un projet Symfony</li>
+            <li>Gérer une base de données</li>
+            <li>Importer en base depuis un fichier csv et inversement</li>
+            <li>Gestion du temps et des priorités</li>
+        </ul>
+    </section>
+{% endblock %}
+
+{% block entreprise %}
+    <div class="encart-entreprise">
+        <span class="encart-titre">Projet pour :</span>
+        <a href="" class="encart-lien">
+            le Crous de Grenoble
+        </a>
+    </div>
+{% endblock %}
+
+{% block buttons %}
+    <a href="{{ path('app_portfolio') }}" class="btn-retour">
+        &larr; Retour 
+    </a>
+{% endblock %}
